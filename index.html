@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>งานอุปสมบท - นาย ภาวิฒ ฉ่ำเสนาะ</title>
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&family=Charm:wght@400;700&family=Noto+Serif+Thai:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --gold: #C9932A;
+    --gold-light: #E8B84B;
+    --gold-pale: #FDF5E0;
+    --saffron: #E8821A;
+    --saffron-light: #FAEBD7;
+    --brown-dark: #3D2B1F;
+    --brown-mid: #6B4226;
+    --brown-light: #A0714F;
+    --cream: #FBF5EA;
+    --off-white: #FFFDF5;
+    --red-auspicious: #8B1A1A;
+    --green-leaf: #3A6B35;
+    --border-gold: rgba(201,147,42,0.35);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Sarabun', sans-serif;
+    background-color: var(--cream);
+    color: var(--brown-dark);
+    overflow-x: hidden;
+  }
+
+  /* ===== HERO ===== */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(160deg, #2A1A08 0%, #4A2C10 40%, #1E1208 100%);
+    overflow: hidden;
+    padding: 60px 20px;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 50% 0%, rgba(201,147,42,0.18) 0%, transparent 70%),
+      radial-gradient(ellipse 60% 40% at 50% 100%, rgba(232,130,26,0.12) 0%, transparent 70%);
+  }
+
+  .pattern-bg {
+    position: absolute;
+    inset: 0;
+    opacity: 0.06;
+    background-image: 
+      repeating-linear-gradient(45deg, #C9932A 0px, #C9932A 1px, transparent 1px, transparent 30px),
+      repeating-linear-gradient(-45deg, #C9932A 0px, #C9932A 1px, transparent 1px, transparent 30px);
+  }
+
+  .hero-frame {
+    position: absolute;
+    inset: 24px;
+    border: 1.5px solid rgba(201,147,42,0.35);
+    pointer-events: none;
+  }
+  .hero-frame::before {
+    content: '';
+    position: absolute;
+    inset: 6px;
+    border: 0.5px solid rgba(201,147,42,0.2);
+  }
+
+  .corner {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+  }
+  .corner svg { width: 100%; height: 100%; }
+  .corner-tl { top: -1px; left: -1px; }
+  .corner-tr { top: -1px; right: -1px; transform: scaleX(-1); }
+  .corner-bl { bottom: -1px; left: -1px; transform: scaleY(-1); }
+  .corner-br { bottom: -1px; right: -1px; transform: scale(-1); }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    animation: fadeUp 1.2s ease both;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(28px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .prelude-text {
+    font-family: 'Noto Serif Thai', serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(232,184,75,0.8);
+    letter-spacing: 4px;
+    margin-bottom: 18px;
+  }
+
+  .dharma-wheel {
+    font-size: 42px;
+    margin-bottom: 12px;
+    animation: spin 30s linear infinite;
+    display: inline-block;
+    color: var(--gold-light);
+    filter: drop-shadow(0 0 8px rgba(232,184,75,0.4));
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .hero-title {
+    font-family: 'Charm', cursive;
+    font-size: clamp(38px, 8vw, 72px);
+    font-weight: 700;
+    line-height: 1.15;
+    background: linear-gradient(135deg, #E8B84B 0%, #C9932A 40%, #FAEBD7 60%, #C9932A 80%, #E8B84B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 8px;
+  }
+
+  .hero-subtitle {
+    font-family: 'Noto Serif Thai', serif;
+    font-size: clamp(22px, 4vw, 36px);
+    font-weight: 600;
+    color: #E8B84B;
+    margin-bottom: 6px;
+  }
+
+  .dharma-name {
+    font-family: 'Noto Serif Thai', serif;
+    font-size: clamp(14px, 2.5vw, 18px);
+    color: rgba(232,184,75,0.7);
+    font-weight: 300;
+    margin-bottom: 32px;
+    font-style: italic;
+  }
+
+  .divider-ornament {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 20px 0 28px;
+  }
+  .divider-ornament::before,
+  .divider-ornament::after {
+    content: '';
+    height: 1px;
+    width: 80px;
+    background: linear-gradient(to right, transparent, rgba(201,147,42,0.6));
+  }
+  .divider-ornament::after { background: linear-gradient(to left, transparent, rgba(201,147,42,0.6)); }
+  .divider-ornament span { color: var(--gold); font-size: 20px; }
+
+  .hero-date-box {
+    display: inline-block;
+    background: rgba(201,147,42,0.12);
+    border: 1px solid rgba(201,147,42,0.4);
+    border-radius: 4px;
+    padding: 16px 36px;
+    margin-bottom: 12px;
+  }
+
+  .hero-date {
+    font-family: 'Noto Serif Thai', serif;
+    font-size: clamp(16px, 3vw, 22px);
+    color: var(--gold-light);
+    font-weight: 400;
+    line-height: 1.8;
+  }
+
+  /* ===== HOST SECTION ===== */
+  .host-box {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .host-group {
+    background: rgba(201,147,42,0.08);
+    border: 1px solid rgba(201,147,42,0.3);
+    border-radius: 6px;
+    padding: 14px 22px;
+    text-align: left;
+    min-width: 200px;
+  }
+
+  .host-role {
+    font-size: 11px;
+    color: rgba(232,184,75,0.6);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  .host-name {
+    font-family: 'Noto Serif Thai', serif;
+    font-size: 15px;
+    color: rgba(232,184,75,0.9);
+    line-height: 1.8;
+  }
+
+  .scroll-hint {
+    position: absolute;
+    bottom: 56px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(201,147,42,0.5);
+    font-size: 12px;
+    letter-spacing: 2px;
+    animation: bounce 2s ease infinite;
+  }
+  @keyframes bounce {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(6px); }
+  }
+
+  /* ===== SECTIONS ===== */
+  .section {
+    padding: 72px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .section-label {
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 10px;
+  }
+
+  .section-title {
+    font-family: 'Noto Serif Thai', serif;
+    font-size: clamp(26px, 4vw, 38px);
+    font-weight: 700;
+    color: var(--brown-dark);
+    line-height: 1.3;
+  }
+
+  .section-line {
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(to right, var(--gold), var(--saffron));
+    margin: 16px auto 0;
+    border-radius: 2px;
+  }
+
+  /* ===== SCHEDULE ===== */
+  .schedule-bg {
+    background: var(--off-white);
+    border-top: 1px solid var(--border-gold);
+    border-bottom: 1px solid var(--border-gold);
+  }
+
+  /* Day tabs */
+  .day-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
+
+  .day-tab {
+    padding: 10px 24px;
+    border: 1px solid var(--border-gold);
+    border-radius: 4px;
+    font-family: 'Noto Serif Thai', serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--brown-light);
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .day-tab.active {
+    background: var(--gold);
+    color: white;
+    border-color: var(--gold);
+  }
+
+  .day-content { display: none; }
+  .day-content.active { display: block; }
+
+  .day-label-banner {
+    text-align: center;
+    margin-bottom: 28px;
+    padding: 10px;
+    background: rgba(201,147,42,0.08);
+    border-radius: 4px;
+    border: 1px dashed rgba(201,147,42,0.3);
+  }
+
+  .day-label-banner span {
+    font-family: 'Noto Serif Thai', serif;
+    font-size: 15px;
+    color: var(--gold);
+    font-weight: 600;
+  }
+
+  .timeline {
+    position: relative;
+    padding-left: 36px;
+    max-width: 620px;
+    margin: 0 auto;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    bottom: 12px;
+    width: 1.5px;
+    background: linear-gradient(to bottom, var(--gold), rgba(201,147,42,0.2));
+  }
+
+  .timeline-item {
+    position: relative;
+    margin-bottom: 32px;
+    animation: slideIn 0.6s ease both;
+  }
+
+  .timeline-item:last-child { margin-bottom: 0; }
+
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateX(-16px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  .timeline-dot {
+    position: absolute;
+    left: -29px;
+    top: 4px;
+    width: 14px;
+    height: 14px;
+    background: var(--gold);
+    border-radius: 50%;
+    border: 3px solid var(--cream);
+    box-shadow: 0 0 0 1.5px var(--gold);
+  }
+
+  .timeline-dot.highlight {
+    background: var(--saffron);
+    box-shadow: 0 0 0 1.5px var(--saffron), 0 0 12px rgba(232,130,26,0.35);
+    width: 18px;
+    height: 18px;
+    left: -31px;
+    top: 2px;
+  }
+
+  .time-label {
+    font-size: 13px;
+    color: var(--gold);
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+  }
+
+  .event-title {
+    font-family: 'Noto Serif Thai', serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--brown-dark);
+    margin-bottom: 4px;
+  }
+
+  .event-desc {
+    font-size: 14px;
+    color: var(--brown-light);
+    line-height: 1.6;
+  }
+
+  /* ===== MENU SECTION ===== */
+  .menu-section {
+    background: var(--cream);
+  }
+
+  .menu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 560px) {
+    .menu-grid { grid-template-columns: 1fr; }
+  }
+
+  .menu-card {
+    background: var(--off-white);
+    border: 1px solid var(--border-gold);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .menu-card-header {
+    background: linear-gradient(135deg, var(--brown-dark), var(--brown-mid));
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .menu-card-header span {
+    font-family: 'Noto Serif Thai', serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--gold-light);
+  }
+
+  .menu-list {
+    padding: 16px 20px;
+    list-style: none;
+  }
+
+  .menu-list li {
+    font-size: 14px;
+    color: var(--brown-mid);
+    padding: 5px 0;
+    border-bottom: 1px dashed rgba(201,147,42,0.15);
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    line-height: 1.5;
+  }
+
+  .menu-list li:last-child { border-bottom: none; }
+
+  .menu-list li::before {
+    content: '•';
+    color: var(--gold);
+    font-size: 16px;
+    flex-shrink: 0;
+    margin-top: -1px;
+  }
+
+  .menu-note {
+    font-size: 12px;
+    color: var(--brown-light);
+    font-style: italic;
+    padding: 0 20px 16px;
+  }
+
+  .restaurant-badge {
+    text-align: center;
+    margin-bottom: 28px;
+    padding: 12px 20px;
+    background: rgba(201,147,42,0.08);
+    border: 1px solid var(--border-gold);
+    border-radius: 6px;
+    max-width: 720px;
+    margin: 0 auto 28px;
+  }
+
+  .restaurant-badge .badge-title {
+    font-family: 'Noto Serif Thai', serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--brown-dark);
+  }
+
+  .restaurant-badge .badge-sub {
+    font-size: 13px;
+    color: var(--brown-light);
+    margin-top: 3px;
+  }
+
+  /* ===== LOCATION ===== */
+  .location-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    align-items: start;
+  }
+
+  @media (max-width: 600px) {
+    .location-grid { grid-template-columns: 1fr; }
+    .hero-date-box { padding: 14px 20px; }
+    .host-box { flex-direction: column; align-items: center; }
+  }
+
+  .location-card {
+    background: var(--off-white);
+    border: 1px solid var(--border-gold);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .map-placeholder {
+    width: 100%;
+    height: 240px;
+    background: linear-gradient(135deg, #e8e0d4 0%, #d4c9b8 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .map-placeholder::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      repeating-linear-gradient(0deg, rgba(0,0,0,0.04) 0px, rgba(0,0,0,0.04) 1px, transparent 1px, transparent 28px),
+      repeating-linear-gradient(90deg, rgba(0,0,0,0.04) 0px, rgba(0,0,0,0.04) 1px, transparent 1px, transparent 28px);
+  }
+
+  .map-roads { position: absolute; inset: 0; }
+
+  .map-pin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.25));
+  }
+
+  .pin-head {
+    width: 28px;
+    height: 28px;
+    background: var(--red-auspicious);
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg);
+    border: 2px solid white;
+  }
+
+  .pin-label {
+    background: var(--brown-dark);
+    color: white;
+    font-size: 11px;
+    padding: 4px 8px;
+    border-radius: 3px;
+    margin-top: 6px;
+    white-space: nowrap;
+    font-weight: 500;
+  }
+
+  .map-link {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    background: var(--brown-dark);
+    color: white;
+    font-size: 12px;
+    padding: 7px 14px;
+    border-radius: 4px;
+    text-decoration: none;
+    z-index: 3;
+    transition: background 0.2s;
+  }
+  .map-link:hover { background: var(--gold); }
+
+  .location-info { padding: 20px 22px; }
+
+  .location-name {
+    font-family: 'Noto Serif Thai', serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--brown-dark);
+    margin-bottom: 8px;
+  }
+
+  .location-detail {
+    font-size: 14px;
+    color: var(--brown-mid);
+    line-height: 1.7;
+    margin-bottom: 12px;
+  }
+
+  .info-row {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: var(--brown-mid);
+  }
+
+  .info-icon { color: var(--gold); font-size: 16px; flex-shrink: 0; margin-top: 1px; }
+
+  /* ===== INFO CARDS ===== */
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  .info-card {
+    background: var(--off-white);
+    border: 1px solid var(--border-gold);
+    border-radius: 8px;
+    padding: 22px 20px;
+    text-align: center;
+    transition: border-color 0.25s, transform 0.25s;
+  }
+
+  .info-card:hover { border-color: var(--gold); transform: translateY(-3px); }
+
+  .card-icon { font-size: 32px; margin-bottom: 12px; }
+
+  .card-title {
+    font-family: 'Noto Serif Thai', serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--brown-dark);
+    margin-bottom: 6px;
+  }
+
+  .card-desc { font-size: 13px; color: var(--brown-light); line-height: 1.6; }
+
+  /* ===== MERIT ===== */
+  .merit-section {
+    background: linear-gradient(135deg, #2A1A08, #3D2010);
+    color: white;
+    text-align: center;
+    padding: 72px 20px;
+  }
+
+  .merit-inner { max-width: 600px; margin: 0 auto; }
+
+  .merit-title {
+    font-family: 'Noto Serif Thai', serif;
+    font-size: clamp(24px, 4vw, 36px);
+    color: var(--gold-light);
+    margin-bottom: 12px;
+    font-weight: 700;
+  }
+
+  .merit-subtitle {
+    font-size: 15px;
+    color: rgba(232,184,75,0.7);
+    margin-bottom: 36px;
+    line-height: 1.7;
+  }
+
+  .bank-card {
+    background: rgba(201,147,42,0.12);
+    border: 1px solid rgba(201,147,42,0.35);
+    border-radius: 8px;
+    padding: 24px 28px;
+    margin-bottom: 16px;
+    text-align: left;
+  }
+
+  .bank-name { font-size: 13px; color: rgba(232,184,75,0.65); letter-spacing: 1px; margin-bottom: 6px; }
+  .bank-account { font-family: monospace; font-size: 22px; color: var(--gold-light); font-weight: 600; letter-spacing: 2px; margin-bottom: 4px; }
+  .bank-holder { font-family: 'Noto Serif Thai', serif; font-size: 16px; color: rgba(255,255,255,0.75); }
+
+  /* ===== DRESS CODE ===== */
+  .dress-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .dress-card {
+    border: 1px solid var(--border-gold);
+    border-radius: 8px;
+    padding: 24px 16px;
+    text-align: center;
+    background: var(--off-white);
+  }
+
+  .dress-swatch { width: 52px; height: 52px; border-radius: 50%; margin: 0 auto 12px; border: 2px solid rgba(0,0,0,0.08); }
+  .dress-label { font-family: 'Noto Serif Thai', serif; font-size: 14px; font-weight: 600; color: var(--brown-dark); margin-bottom: 4px; }
+  .dress-note { font-size: 12px; color: var(--brown-light); }
+
+  /* ===== QUOTE BANNER ===== */
+  .quote-banner {
+    background: var(--gold-pale);
+    border-top: 2px solid var(--gold);
+    border-bottom: 2px solid var(--gold);
+    padding: 36px 20px;
+    text-align: center;
+  }
+
+  .quote-text {
+    font-family: 'Noto Serif Thai', serif;
+    font-size: clamp(15px, 2.5vw, 19px);
+    color: var(--brown-mid);
+    font-style: italic;
+    line-height: 1.9;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  .quote-source { font-size: 13px; color: var(--gold); margin-top: 12px; letter-spacing: 1px; }
+
+  /* ===== FOOTER ===== */
+  footer {
+    background: var(--brown-dark);
+    color: rgba(232,184,75,0.6);
+    text-align: center;
+    padding: 32px 20px;
+    font-size: 13px;
+    line-height: 1.9;
+  }
+
+  footer .footer-title {
+    font-family: 'Noto Serif Thai', serif;
+    font-size: 18px;
+    color: var(--gold-light);
+    margin-bottom: 8px;
+  }
+
+  /* ===== RSVP BAR ===== */
+  .rsvp-bar {
+    position: sticky;
+    bottom: 0;
+    z-index: 100;
+    background: rgba(42,26,8,0.96);
+    backdrop-filter: blur(8px);
+    padding: 14px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border-top: 1px solid rgba(201,147,42,0.3);
+  }
+
+  .rsvp-btn {
+    background: linear-gradient(135deg, #C9932A, #E8821A);
+    color: white;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 4px;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: opacity 0.2s, transform 0.15s;
+    display: inline-block;
+  }
+  .rsvp-btn:hover { opacity: 0.88; transform: scale(1.02); }
+
+  .rsvp-btn.secondary {
+    background: transparent;
+    border: 1px solid rgba(201,147,42,0.5);
+    color: var(--gold-light);
+  }
+
+  .timeline-item:nth-child(1) { animation-delay: 0.05s; }
+  .timeline-item:nth-child(2) { animation-delay: 0.15s; }
+  .timeline-item:nth-child(3) { animation-delay: 0.25s; }
+  .timeline-item:nth-child(4) { animation-delay: 0.35s; }
+  .timeline-item:nth-child(5) { animation-delay: 0.45s; }
+  .timeline-item:nth-child(6) { animation-delay: 0.55s; }
+
+  .road { stroke: rgba(200,190,170,0.7); fill: none; stroke-width: 4; }
+  .road-main { stroke: rgba(180,165,140,0.9); stroke-width: 8; }
+  .road-label { font-size: 8px; fill: #9a8a70; font-family: sans-serif; }
+  .temple-area { fill: rgba(201,147,42,0.25); stroke: var(--gold); stroke-width: 1.5; stroke-dasharray: 4,2; }
+  .temple-icon { fill: var(--saffron); }
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="pattern-bg"></div>
+  <div class="hero-frame">
+    <div class="corner corner-tl">
+      <svg viewBox="0 0 44 44" fill="none">
+        <path d="M2 42 L2 6 Q2 2 6 2 L42 2" stroke="#C9932A" stroke-width="1.5"/>
+        <circle cx="2" cy="2" r="4" fill="#C9932A" opacity="0.6"/>
+        <path d="M8 2 L8 8 L2 8" stroke="#C9932A" stroke-width="0.5" opacity="0.5"/>
+      </svg>
+    </div>
+    <div class="corner corner-tr">
+      <svg viewBox="0 0 44 44" fill="none">
+        <path d="M2 42 L2 6 Q2 2 6 2 L42 2" stroke="#C9932A" stroke-width="1.5"/>
+        <circle cx="2" cy="2" r="4" fill="#C9932A" opacity="0.6"/>
+        <path d="M8 2 L8 8 L2 8" stroke="#C9932A" stroke-width="0.5" opacity="0.5"/>
+      </svg>
+    </div>
+    <div class="corner corner-bl">
+      <svg viewBox="0 0 44 44" fill="none">
+        <path d="M2 42 L2 6 Q2 2 6 2 L42 2" stroke="#C9932A" stroke-width="1.5"/>
+        <circle cx="2" cy="2" r="4" fill="#C9932A" opacity="0.6"/>
+        <path d="M8 2 L8 8 L2 8" stroke="#C9932A" stroke-width="0.5" opacity="0.5"/>
+      </svg>
+    </div>
+    <div class="corner corner-br">
+      <svg viewBox="0 0 44 44" fill="none">
+        <path d="M2 42 L2 6 Q2 2 6 2 L42 2" stroke="#C9932A" stroke-width="1.5"/>
+        <circle cx="2" cy="2" r="4" fill="#C9932A" opacity="0.6"/>
+        <path d="M8 2 L8 8 L2 8" stroke="#C9932A" stroke-width="0.5" opacity="0.5"/>
+      </svg>
+    </div>
+  </div>
+
+  <div class="hero-content">
+    <div class="prelude-text">✦   ขออนุญาตแจ้งมายัง   ✦</div>
+    <div class="dharma-wheel">☸</div>
+    <h1 class="hero-title">งานอุปสมบท</h1>
+    <div class="hero-subtitle">นาย ภาวิฒ ฉ่ำเสนาะ</div>
+
+    <div class="divider-ornament"><span>❧</span></div>
+
+    <div class="host-box">
+      <div class="host-group">
+        <div class="host-role">✦ ประธาน ✦</div>
+        <div class="host-name">
+          นายชำนาญ ฉ่ำเสนาะ (ตา)<br>
+          นางต้อย ฉ่ำเสนาะ (ยาย)
+        </div>
+      </div>
+      <div class="host-group">
+        <div class="host-role">✦ เจ้าภาพ ✦</div>
+        <div class="host-name">
+          นางสาวกิรษา ฉ่ำเสนาะ (แม่)<br>
+          นายวชิระชัย วิชัยดิษฐ์ (พ่ออุปถัมภ์)
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top: 24px;">
+      <div class="hero-date-box">
+        <div class="hero-date">
+          วันเสาร์ที่ ๒๗ มีนาคม พ.ศ. ๒๕๗๐ <br/> วันอาทิตย์ที่ ๒๘ มีนาคม พ.ศ. ๒๕๗๐
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-hint">↓   เลื่อนดูรายละเอียด   ↓</div>
+</section>
+
+<div class="quote-banner">
+  <div class="quote-text">
+    "บุญกิริยาวัตถุ ๑๐ ประการ ไม่มีบุญใดยิ่งใหญ่กว่า<br>
+    การออกบวชเพื่อศึกษาพระธรรมวินัย อันเป็นทางพ้นทุกข์"
+  </div>
+  <div class="quote-source">✦ พระธรรมเทศนา ✦</div>
+</div>
+
+<div class="schedule-bg">
+  <div class="section">
+    <div class="section-header">
+      <div class="section-label">✦ กำหนดการ ✦</div>
+      <h2 class="section-title">ลำดับพิธีกรรม</h2>
+      <span class="section-line"></span>
+    </div>
+
+    <div class="day-tabs">
+      <button class="day-tab active" onclick="switchDay('day1', this)">วันเสาร์ที่ ๒๗ มีนาคม ๒๕๗๐</button>
+      <button class="day-tab" onclick="switchDay('day2', this)">วันอาทิตย์ที่ ๒๘ มีนาคม ๒๕๗๐</button>
+    </div>
+
+    <div id="day1" class="day-content active">
+      <div class="day-label-banner">
+        <span>วันเสาร์ที่ ๒๗ มีนาคม พ.ศ. ๒๕๗๐ — วันก่อนบวช</span>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot highlight"></div>
+          <div class="time-label">17:00 น.</div>
+          <div class="event-title">โกนผมนาค · อาบน้ำนาค ✦</div>
+          <div class="event-desc">ญาติผู้ใหญ่ร่วมพิธีโกนผมและสรงน้ำขมิ้น ส้มป่อย หอมแดง เตรียมนาคเข้าพิธี</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot highlight"></div>
+          <div class="time-label">18:30 น.</div>
+          <div class="event-title">เทศสอนนาค ✦</div>
+          <div class="event-desc">พระสงฆ์เทศนาสั่งสอนนาคก่อนเข้าอุปสมบท ญาติโยมร่วมฟังธรรมและอนุโมทนาบุญ</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="day2" class="day-content">
+      <div class="day-label-banner">
+        <span>วันอาทิตย์ที่ ๒๘ มีนาคม พ.ศ. ๒๕๗๐ — วันบวช</span>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot highlight"></div>
+          <div class="time-label">09:00 น.</div>
+          <div class="event-title">แห่นาคจากบ้าน ✦</div>
+          <div class="event-desc">ขบวนแห่นาคจากบ้านไปยังวัด พร้อมดนตรีพื้นบ้าน มีการโปรยทาน กรุณาร่วมขบวน</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot highlight"></div>
+          <div class="time-label">12:00 น.</div>
+          <div class="event-title">พิธีอุปสมบท ✦</div>
+          <div class="event-desc">ประกอบพิธีในอุโบสถ ท่านเจ้าอาวาสเป็นพระอุปัชฌาย์ ญาติโยมร่วมอนุโมทนา</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="time-label">12:30 น.</div>
+          <div class="event-title">รับประทานอาหาร</div>
+          <div class="event-desc">จัดเลี้ยงอาหารแขกผู้มาร่วมงาน อาหารโต๊ะจีน ณ บริเวณงานพิธี</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section menu-section">
+  <div class="section-header">
+    <div class="section-label">✦ เมนูอาหาร ✦</div>
+    <h2 class="section-title">รายการอาหารงานเลี้ยง</h2>
+    <span class="section-line"></span>
+  </div>
+
+  <div class="restaurant-badge">
+    <div class="badge-title">❖ สำราญโต๊ะจีน</div>
+    <div class="badge-sub">รายการอาหารโต๊ะจีน</div>
+  </div>
+
+  <div class="menu-grid">
+    <div class="menu-card">
+      <div class="menu-card-header">
+        <span>✦ รายการอาหาร</span>
+      </div>
+      <ul class="menu-list">
+        <li>ออเดิฟ (หอยจ้อ, ออกดอก, ถั่วหอด, เต้าหู้ปลา)</li>
+        <li>ทอดมันปลากราย</li>
+        <li>กระเพาะปลาน้ำแดง</li>
+        <li>ยำคอหมูย่าง</li>
+        <li>ต้มยำรวมมิตรน้ำข้น</li>
+        <li>หมูมะนาว</li>
+        <li>ปลาหับหิมทอดลุยสวน</li>
+        <li>ข้าวผัดกุนเชียง</li>
+        <li>รวมมิตร (หับหิมกรอบ) กะทิ</li>
+      </ul>
+    </div>
+
+    <div class="menu-card">
+      <div class="menu-card-header">
+        <span>✦ รายการเครื่องดื่ม</span>
+      </div>
+      <ul class="menu-list">
+        <li>เหล้าหงส์ทอง ๑ กลม</li>
+        <li>โซดาสิงห์ ๔ ขวด</li>
+        <li>น้ำอัดลม ๒ ขวด<br><span style="font-size:12px; color:var(--brown-light);">(๑ โค้ก ทุกโต๊ะ · อีก ๑ แฟนต้าน้ำเขียว หรือ แฟนต้าน้ำแดง)</span></li>
+        <li>น้ำโพลาลอส ๒ ขวด</li>
+      </ul>
+      <div class="menu-note">* รายการเครื่องดื่มต่อ ๑ โต๊ะ</div>
+    </div>
+  </div>
+</div>
+
+<div class="schedule-bg">
+  <div class="section">
+    <div class="section-header">
+      <div class="section-label">✦ สถานที่ ✦</div>
+      <h2 class="section-title">แผนที่และเส้นทาง</h2>
+      <span class="section-line"></span>
+    </div>
+
+    <div class="location-grid">
+      <div class="location-card">
+        <div class="map-placeholder">
+          <svg width="100%" height="100%" viewBox="0 0 280 240" class="map-roads">
+            <line x1="0" y1="80" x2="280" y2="80" class="road-main"/>
+            <line x1="0" y1="140" x2="280" y2="140" class="road"/>
+            <line x1="0" y1="190" x2="280" y2="190" class="road"/>
+            <line x1="60" y1="0" x2="60" y2="240" class="road"/>
+            <line x1="140" y1="0" x2="140" y2="240" class="road-main"/>
+            <line x1="220" y1="0" x2="220" y2="240" class="road"/>
+            <text x="8" y="75" class="road-label">ถ.สรรพยา</text>
+            <text x="8" y="135" class="road-label">ต.โพนางดำตก</text>
+            <rect x="62" y="82" width="76" height="56" fill="#d8d0c0" rx="2"/>
+            <rect x="142" y="82" width="76" height="56" fill="#d8d0c0" rx="2"/>
+            <rect x="62" y="142" width="76" height="46" fill="#d4cfc0" rx="2"/>
+            <rect x="142" y="142" width="76" height="46" rx="4" class="temple-area"/>
+            <rect x="172" y="152" width="16" height="14" class="temple-icon" rx="1"/>
+            <polygon points="172,152 188,152 180,142" class="temple-icon"/>
+            <rect x="178" y="158" width="4" height="8" fill="white"/>
+            <text x="153" y="182" style="font-size:9px; fill:#8B5A10; font-family:sans-serif; font-weight:600;">วัดตะกู</text>
+          </svg>
+          <div class="map-pin" style="top:62%; left:63%">
+            <div class="pin-head"></div>
+            <div class="pin-label">❖ วัดตะกู</div>
+          </div>
+          <a href="https://www.google.com/maps/search/?api=1&query=วัดตะกู+ชัยนาท" target="_blank" class="map-link">เปิดใน Google Maps →</a>
+        </div>
+        <div class="location-info">
+          <div class="location-name">วัดตะกู</div>
+          <div class="location-detail">ต.โพนางดำตก อ.สรรพยา จ.ชัยนาท</div>
+          <div class="info-row"><span class="info-icon">❖</span><span>สถานที่ประกอบพิธีอุปสมบท (วันอาทิตย์)</span></div>
+          <div class="info-row"><span class="info-icon">❖</span><span>พิกัดสถานที่จัดงานเลี้ยง (วันอาทิตย์)</span></div>
+        </div>
+      </div>
+
+      <div class="location-card">
+        <div class="map-placeholder">
+          <svg width="100%" height="100%" viewBox="0 0 280 240" class="map-roads">
+            <line x1="0" y1="100" x2="280" y2="100" class="road-main"/>
+            <line x1="0" y1="160" x2="280" y2="160" class="road"/>
+            <line x1="80" y1="0" x2="80" y2="240" class="road"/>
+            <line x1="160" y1="0" x2="160" y2="240" class="road-main"/>
+            <line x1="230" y1="0" x2="230" y2="240" class="road"/>
+            <text x="8" y="95" class="road-label">ที่อยู่บ้าน</text>
+            <rect x="82" y="102" width="76" height="56" fill="#d8d0c0" rx="2"/>
+            <rect x="162" y="102" width="66" height="56" fill="#d4cfc0" rx="2"/>
+            <rect x="82" y="162" width="76" height="36" fill="#d4cfc0" rx="2"/>
+            <rect x="162" y="162" width="66" height="36" rx="4" class="temple-area" style="fill:rgba(139,26,26,0.12); stroke:#8B1A1A;"/>
+            <text x="168" y="182" style="font-size:9px; fill:#8B1A1A; font-family:sans-serif; font-weight:600;">บ้านงาน</text>
+          </svg>
+          <div class="map-pin" style="top:72%; left:72%">
+            <div class="pin-head" style="background:#8B1A1A;"></div>
+            <div class="pin-label">❖ บ้านครอบครัวฉ่ำเสนาะ</div>
+          </div>
+          <a href="https://maps.app.goo.gl/bHW512E9V87wEvBk9" target="_blank" class="map-link">เปิดใน Google Maps →</a>
+        </div>
+        <div class="location-info">
+          <div class="location-name">บ้านครอบครัวฉ่ำเสนาะ</div>
+          <div class="location-detail">ต.โพนางดำตก อ.สรรพยา จ.ชัยนาท</div>
+          <div class="info-row"><span class="info-icon">❖</span><span>จุดรับเชิญ พิธีโกนผม เทศสอนนาค (วันเสาร์)</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-header">
+    <div class="section-label">✦ สิ่งที่ควรทราบ ✦</div>
+    <h2 class="section-title">ข้อปฏิบัติสำหรับแขกผู้มาร่วมงาน</h2>
+    <span class="section-line"></span>
+  </div>
+
+  <div class="info-grid">
+    <div class="info-card">
+      <div class="card-icon">🪷</div>
+      <div class="card-title">มารยาทในวัด</div>
+      <div class="card-desc">กรุณาถอดรองเท้าก่อนเข้าโบสถ์ ห้ามส่งเสียงดัง ปิดเสียงโทรศัพท์ตลอดพิธีบวช</div>
+    </div>
+    <div class="info-card">
+      <div class="card-icon">💮</div>
+      <div class="card-title">การแต่งกาย</div>
+      <div class="card-desc">แต่งกายสุภาพ สีขาว เหลือง หรือชุดไทย ไม่ควรใส่เสื้อผ้าสีดำ หรือเสื้อแขนกุด</div>
+    </div>
+    <div class="info-card">
+      <div class="card-icon">🪔</div>
+      <div class="card-title">ของถวาย</div>
+      <div class="card-desc">หากต้องการถวายสังฆทาน แนะนำเป็นปัจจัย ผ้าไตร น้ำปานะ หรือสิ่งของจำเป็น</div>
+    </div>
+    <div class="info-card">
+      <div class="card-icon">📷</div>
+      <div class="card-title">การถ่ายภาพ</div>
+      <div class="card-desc">ถ่ายภาพได้ แต่ไม่ควรบังผู้ร่วมพิธี หลีกเลี่ยงการใช้แฟลชในโบสถ์ระหว่างพิธีสวด</div>
+    </div>
+    <div class="info-card">
+      <div class="card-icon">🍵</div>
+      <div class="card-title">อาหารและเครื่องดื่ม</div>
+      <div class="card-desc">จัดเลี้ยงอาหารโต๊ะจีน เวลา ๑๒:๓๐ น. วันอาทิตย์ที่ ๒๘ มีนาคม ณ บริเวณงานพิธี</div>
+    </div>
+    <div class="info-card">
+      <div class="card-icon">📜</div>
+      <div class="card-title">งาน ๒ วัน</div>
+      <div class="card-desc">วันเสาร์: โกนผม-เทศสอนนาค · วันอาทิตย์: แห่นาค-บวช-เลี้ยงอาหาร</div>
+    </div>
+  </div>
+</div>
+
+<div class="schedule-bg">
+  <div class="section" style="padding-top:56px; padding-bottom:56px;">
+    <div class="section-header">
+      <div class="section-label">✦ การแต่งกาย ✦</div>
+      <h2 class="section-title">Dress Code งานบวช</h2>
+      <span class="section-line"></span>
+    </div>
+
+    <div class="dress-grid">
+      <div class="dress-card">
+        <div class="dress-swatch" style="background:#FFFFFF; border: 2px solid #ddd;"></div>
+        <div class="dress-label">ขาว</div>
+        <div class="dress-note">แนะนำสำหรับสุภาพสตรี<br>ชุดไทยจิตรลดา หรือโจงกระเบน</div>
+      </div>
+      <div class="dress-card">
+        <div class="dress-swatch" style="background:#E8B84B;"></div>
+        <div class="dress-label">เหลือง / ทอง</div>
+        <div class="dress-note">สีมงคล เหมาะสำหรับ<br>ทั้งชายและหญิง</div>
+      </div>
+      <div class="dress-card">
+        <div class="dress-swatch" style="background:#8B1A1A;"></div>
+        <div class="dress-label">แดงมงคล</div>
+        <div class="dress-note">ชุดไทยสีแดงอิฐ<br>สีมงคลตามโบราณ</div>
+      </div>
+      <div class="dress-card">
+        <div class="dress-swatch" style="background:#2E5A1C;"></div>
+        <div class="dress-label">เขียวขวัญ</div>
+        <div class="dress-note">สีธรรมชาติ สงบเย็น<br>เหมาะกับทุกเพศวัย</div>
+      </div>
+    </div>
+
+    <p style="text-align:center; margin-top:20px; font-size:13px; color: var(--brown-light);">
+      ✦ หลีกเลี่ยงสีดำ สีเทาเข้ม และเสื้อผ้าที่เปิดเผยร่างกายมากเกินไป
+    </p>
+  </div>
+</div>
+
+<div class="merit-section" id="merit">
+  <div class="merit-inner">
+    <div style="font-size:36px; margin-bottom:16px;">🪷</div>
+    <div class="merit-title">ร่วมอนุโมทนาบุญ</div>
+    <div class="merit-subtitle">
+      ผู้ใดไม่สะดวกมาร่วมงาน สามารถร่วมบุญได้ทางช่องทางต่อไปนี้<br>
+      ทางครอบครัวจะนำปัจจัยถวายวัดและบำรุงศาสนาต่อไป
+    </div>
+
+    <div class="bank-card">
+      <div class="bank-name">ธนาคารกรุงไทย · บัญชีออมทรัพย์</div>
+      <div class="bank-account">XXX-X-XXXXX-X</div>
+      <div class="bank-holder">นางสาวกิรษา ฉ่ำเสนาะ (แม่)</div>
+    </div>
+
+    <p style="font-size:12px; color:rgba(232,184,75,0.45); margin-top:16px;">
+      กรุณาติดต่อสอบถามช่องทางโอนเงินเพิ่มเติม
+    </p>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-title">งานอุปสมบท นาย ภาวิฒ ฉ่ำเสนาะ</div>
+  วันเสาร์ที่ ๒๗ – อาทิตย์ที่ ๒๘ มีนาคม พ.ศ. ๒๕๗๐<br>
+  ประธาน: นายชำนาญ และ นางต้อย ฉ่ำเสนาะ  <br/>  เจ้าภาพ: นางสาวกิรษา ฉ่ำเสนาะ และ นายวชิระชัย วิชัยดิษฐ์<br><br>
+  <span style="font-size:11px; opacity:0.5;">ขออนุโมทนาบุญกับทุกท่านที่มาร่วมงาน</span>
+</footer>
+
+<div class="rsvp-bar">
+  <a href="#merit" class="rsvp-btn secondary">ร่วมอนุโมทนาบุญ</a>
+</div>
+
+<script>
+  function switchDay(dayId, btn) {
+    document.querySelectorAll('.day-content').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.day-tab').forEach(el => el.classList.remove('active'));
+    document.getElementById(dayId).classList.add('active');
+    btn.classList.add('active');
+  }
+</script>
+
+</body>
+</html>
