@@ -22,10 +22,7 @@
     --border-gold: rgba(201,147,42,0.35);
   }
 
-  html {
-    scroll-behavior: smooth;
-  }
-
+  html { scroll-behavior: smooth; }
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
   body {
@@ -80,11 +77,7 @@
     border: 0.5px solid rgba(201,147,42,0.2);
   }
 
-  .corner {
-    position: absolute;
-    width: 44px;
-    height: 44px;
-  }
+  .corner { position: absolute; width: 44px; height: 44px; }
   .corner svg { width: 100%; height: 100%; }
   .corner-tl { top: -1px; left: -1px; }
   .corner-tr { top: -1px; right: -1px; transform: scaleX(-1); }
@@ -141,15 +134,6 @@
     margin-bottom: 6px;
   }
 
-  .dharma-name {
-    font-family: 'Noto Serif Thai', serif;
-    font-size: clamp(14px, 2.5vw, 18px);
-    color: rgba(232,184,75,0.7);
-    font-weight: 300;
-    margin-bottom: 32px;
-    font-style: italic;
-  }
-
   .divider-ornament {
     display: flex;
     align-items: center;
@@ -184,7 +168,6 @@
     line-height: 1.8;
   }
 
-  /* ===== HOST SECTION ===== */
   .host-box {
     display: flex;
     gap: 32px;
@@ -276,7 +259,6 @@
     border-bottom: 1px solid var(--border-gold);
   }
 
-  /* Day tabs */
   .day-tabs {
     display: flex;
     justify-content: center;
@@ -345,7 +327,6 @@
     margin-bottom: 32px;
     animation: slideIn 0.6s ease both;
   }
-
   .timeline-item:last-child { margin-bottom: 0; }
 
   @keyframes slideIn {
@@ -396,114 +377,12 @@
     line-height: 1.6;
   }
 
-  /* ===== MENU SECTION ===== */
-  .menu-section {
-    background: var(--cream);
-  }
-
-  .menu-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
-    max-width: 720px;
-    margin: 0 auto;
-  }
-
-  @media (max-width: 560px) {
-    .menu-grid { grid-template-columns: 1fr; }
-  }
-
-  .menu-card {
-    background: var(--off-white);
-    border: 1px solid var(--border-gold);
-    border-radius: 8px;
-    overflow: hidden;
-  }
-
-  .menu-card-header {
-    background: linear-gradient(135deg, var(--brown-dark), var(--brown-mid));
-    padding: 14px 20px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .menu-card-header span {
-    font-family: 'Noto Serif Thai', serif;
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--gold-light);
-  }
-
-  .menu-list {
-    padding: 16px 20px;
-    list-style: none;
-  }
-
-  .menu-list li {
-    font-size: 14px;
-    color: var(--brown-mid);
-    padding: 5px 0;
-    border-bottom: 1px dashed rgba(201,147,42,0.15);
-    display: flex;
-    align-items: flex-start;
-    gap: 8px;
-    line-height: 1.5;
-  }
-
-  .menu-list li:last-child { border-bottom: none; }
-
-  .menu-list li::before {
-    content: '•';
-    color: var(--gold);
-    font-size: 16px;
-    flex-shrink: 0;
-    margin-top: -1px;
-  }
-
-  .menu-note {
-    font-size: 12px;
-    color: var(--brown-light);
-    font-style: italic;
-    padding: 0 20px 16px;
-  }
-
-  .restaurant-badge {
-    text-align: center;
-    margin-bottom: 28px;
-    padding: 12px 20px;
-    background: rgba(201,147,42,0.08);
-    border: 1px solid var(--border-gold);
-    border-radius: 6px;
-    max-width: 720px;
-    margin: 0 auto 28px;
-  }
-
-  .restaurant-badge .badge-title {
-    font-family: 'Noto Serif Thai', serif;
-    font-size: 17px;
-    font-weight: 700;
-    color: var(--brown-dark);
-  }
-
-  .restaurant-badge .badge-sub {
-    font-size: 13px;
-    color: var(--brown-light);
-    margin-top: 3px;
-  }
-
   /* ===== LOCATION ===== */
   .location-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 24px;
     align-items: start;
-  }
-
-  @media (max-width: 600px) {
-    .location-grid { grid-template-columns: 1fr; }
-    .hero-date-box { padding: 14px 20px; }
-    .host-box { flex-direction: column; align-items: center; }
   }
 
   .location-card {
@@ -628,7 +507,6 @@
   }
 
   .info-card:hover { border-color: var(--gold); transform: translateY(-3px); }
-
   .card-icon { font-size: 32px; margin-bottom: 12px; }
 
   .card-title {
@@ -640,44 +518,6 @@
   }
 
   .card-desc { font-size: 13px; color: var(--brown-light); line-height: 1.6; }
-
-  /* ===== MERIT ===== */
-  .merit-section {
-    background: linear-gradient(135deg, #2A1A08, #3D2010);
-    color: white;
-    text-align: center;
-    padding: 72px 20px;
-  }
-
-  .merit-inner { max-width: 600px; margin: 0 auto; }
-
-  .merit-title {
-    font-family: 'Noto Serif Thai', serif;
-    font-size: clamp(24px, 4vw, 36px);
-    color: var(--gold-light);
-    margin-bottom: 12px;
-    font-weight: 700;
-  }
-
-  .merit-subtitle {
-    font-size: 15px;
-    color: rgba(232,184,75,0.7);
-    margin-bottom: 36px;
-    line-height: 1.7;
-  }
-
-  .bank-card {
-    background: rgba(201,147,42,0.12);
-    border: 1px solid rgba(201,147,42,0.35);
-    border-radius: 8px;
-    padding: 24px 28px;
-    margin-bottom: 16px;
-    text-align: left;
-  }
-
-  .bank-name { font-size: 13px; color: rgba(232,184,75,0.65); letter-spacing: 1px; margin-bottom: 6px; }
-  .bank-account { font-family: monospace; font-size: 22px; color: var(--gold-light); font-weight: 600; letter-spacing: 2px; margin-bottom: 4px; }
-  .bank-holder { font-family: 'Noto Serif Thai', serif; font-size: 16px; color: rgba(255,255,255,0.75); }
 
   /* ===== DRESS CODE ===== */
   .dress-grid {
@@ -738,41 +578,11 @@
     margin-bottom: 8px;
   }
 
-  /* ===== RSVP BAR ===== */
-  .rsvp-bar {
-    position: sticky;
-    bottom: 0;
-    z-index: 100;
-    background: rgba(42,26,8,0.96);
-    backdrop-filter: blur(8px);
-    padding: 14px 20px;
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    border-top: 1px solid rgba(201,147,42,0.3);
-  }
-
-  .rsvp-btn {
-    background: linear-gradient(135deg, #C9932A, #E8821A);
-    color: white;
-    border: none;
-    padding: 12px 32px;
-    border-radius: 4px;
-    font-family: 'Sarabun', sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-    cursor: pointer;
-    text-decoration: none;
-    transition: opacity 0.2s, transform 0.15s;
-    display: inline-block;
-  }
-  .rsvp-btn:hover { opacity: 0.88; transform: scale(1.02); }
-
-  .rsvp-btn.secondary {
-    background: transparent;
-    border: 1px solid rgba(201,147,42,0.5);
-    color: var(--gold-light);
-  }
+  .road { stroke: rgba(200,190,170,0.7); fill: none; stroke-width: 4; }
+  .road-main { stroke: rgba(180,165,140,0.9); stroke-width: 8; }
+  .road-label { font-size: 8px; fill: #9a8a70; font-family: sans-serif; }
+  .temple-area { fill: rgba(201,147,42,0.25); stroke: var(--gold); stroke-width: 1.5; stroke-dasharray: 4,2; }
+  .temple-icon { fill: var(--saffron); }
 
   .timeline-item:nth-child(1) { animation-delay: 0.05s; }
   .timeline-item:nth-child(2) { animation-delay: 0.15s; }
@@ -781,15 +591,459 @@
   .timeline-item:nth-child(5) { animation-delay: 0.45s; }
   .timeline-item:nth-child(6) { animation-delay: 0.55s; }
 
-  .road { stroke: rgba(200,190,170,0.7); fill: none; stroke-width: 4; }
-  .road-main { stroke: rgba(180,165,140,0.9); stroke-width: 8; }
-  .road-label { font-size: 8px; fill: #9a8a70; font-family: sans-serif; }
-  .temple-area { fill: rgba(201,147,42,0.25); stroke: var(--gold); stroke-width: 1.5; stroke-dasharray: 4,2; }
-  .temple-icon { fill: var(--saffron); }
+  /* ===================================================
+     RSVP SECTION — HERO FLOATING BANNER + MODAL FORM
+     =================================================== */
+
+  /* ── Floating RSVP banner (above footer) ── */
+  .rsvp-section {
+    background: linear-gradient(135deg, #1E1208 0%, #3A2210 50%, #1E1208 100%);
+    border-top: 1px solid rgba(201,147,42,0.4);
+    border-bottom: 1px solid rgba(201,147,42,0.4);
+    padding: 56px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .rsvp-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 70% 80% at 50% 50%, rgba(201,147,42,0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .rsvp-section-pattern {
+    position: absolute;
+    inset: 0;
+    opacity: 0.04;
+    background-image:
+      repeating-linear-gradient(45deg, #C9932A 0px, #C9932A 1px, transparent 1px, transparent 24px),
+      repeating-linear-gradient(-45deg, #C9932A 0px, #C9932A 1px, transparent 1px, transparent 24px);
+    pointer-events: none;
+  }
+
+  .rsvp-inner { position: relative; z-index: 1; max-width: 600px; margin: 0 auto; }
+
+  .rsvp-lotus { font-size: 48px; margin-bottom: 12px; display: inline-block; animation: floatLotus 4s ease-in-out infinite; }
+  @keyframes floatLotus {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+
+  .rsvp-headline {
+    font-family: 'Noto Serif Thai', serif;
+    font-size: clamp(24px, 5vw, 38px);
+    font-weight: 700;
+    color: var(--gold-light);
+    margin-bottom: 10px;
+    line-height: 1.3;
+  }
+
+  .rsvp-sub {
+    font-size: 15px;
+    color: rgba(232,184,75,0.65);
+    margin-bottom: 32px;
+    line-height: 1.7;
+  }
+
+  .rsvp-open-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, #C9932A 0%, #E8821A 100%);
+    color: white;
+    border: none;
+    padding: 16px 48px;
+    border-radius: 6px;
+    font-family: 'Noto Serif Thai', serif;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 24px rgba(232,130,26,0.35), 0 0 0 0 rgba(232,130,26,0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+    animation: pulseGlow 3s ease infinite;
+    letter-spacing: 0.5px;
+  }
+
+  @keyframes pulseGlow {
+    0%, 100% { box-shadow: 0 4px 24px rgba(232,130,26,0.35), 0 0 0 0 rgba(232,130,26,0.3); }
+    50% { box-shadow: 0 8px 32px rgba(232,130,26,0.5), 0 0 0 10px rgba(232,130,26,0); }
+  }
+
+  .rsvp-open-btn:hover { transform: scale(1.04); }
+
+  .rsvp-count-note {
+    margin-top: 20px;
+    font-size: 13px;
+    color: rgba(232,184,75,0.45);
+    font-style: italic;
+  }
+
+  /* ── Modal overlay ── */
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(20, 10, 0, 0.85);
+    backdrop-filter: blur(6px);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.35s ease;
+  }
+
+  .modal-overlay.open {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  /* ── Modal box ── */
+  .modal-box {
+    background: linear-gradient(160deg, #FBF5EA 0%, #FFF8EE 100%);
+    border: 1px solid rgba(201,147,42,0.5);
+    border-radius: 12px;
+    width: 100%;
+    max-width: 520px;
+    max-height: 92vh;
+    overflow-y: auto;
+    position: relative;
+    transform: translateY(32px) scale(0.97);
+    transition: transform 0.35s ease;
+    box-shadow: 0 24px 80px rgba(0,0,0,0.5), 0 0 0 1px rgba(201,147,42,0.2);
+  }
+
+  .modal-overlay.open .modal-box {
+    transform: translateY(0) scale(1);
+  }
+
+  /* Gold top bar */
+  .modal-topbar {
+    background: linear-gradient(135deg, #2A1A08, #4A2C10);
+    padding: 24px 28px 20px;
+    border-radius: 11px 11px 0 0;
+    position: relative;
+    text-align: center;
+    border-bottom: 2px solid var(--gold);
+  }
+
+  .modal-top-icon { font-size: 32px; margin-bottom: 6px; display: block; }
+
+  .modal-title {
+    font-family: 'Noto Serif Thai', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--gold-light);
+    margin-bottom: 4px;
+  }
+
+  .modal-subtitle {
+    font-size: 13px;
+    color: rgba(232,184,75,0.6);
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    background: rgba(201,147,42,0.15);
+    border: 1px solid rgba(201,147,42,0.3);
+    color: var(--gold-light);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+    line-height: 1;
+  }
+  .modal-close:hover { background: rgba(201,147,42,0.3); }
+
+  /* ── Form body ── */
+  .modal-body { padding: 28px 28px 24px; }
+
+  .form-group { margin-bottom: 20px; }
+
+  .form-label {
+    display: block;
+    font-family: 'Noto Serif Thai', serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--brown-dark);
+    margin-bottom: 7px;
+  }
+
+  .form-label .req { color: var(--saffron); margin-left: 3px; }
+
+  .form-input,
+  .form-select,
+  .form-textarea {
+    width: 100%;
+    padding: 11px 14px;
+    border: 1.5px solid rgba(201,147,42,0.3);
+    border-radius: 6px;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 15px;
+    color: var(--brown-dark);
+    background: white;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    appearance: none;
+  }
+
+  .form-input:focus,
+  .form-select:focus,
+  .form-textarea:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(201,147,42,0.12);
+  }
+
+  .form-select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23C9932A' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 40px;
+  }
+
+  .form-textarea { resize: vertical; min-height: 80px; line-height: 1.6; }
+
+  /* Attendance radio chips */
+  .attend-chips {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .attend-chip input { display: none; }
+
+  .attend-chip label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 14px 10px;
+    border: 1.5px solid rgba(201,147,42,0.3);
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s;
+    background: white;
+    font-family: 'Noto Serif Thai', serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--brown-mid);
+  }
+
+  .attend-chip label .chip-icon { font-size: 24px; }
+  .attend-chip label .chip-sub { font-size: 11px; color: var(--brown-light); font-weight: 400; }
+
+  .attend-chip input:checked + label {
+    border-color: var(--gold);
+    background: linear-gradient(135deg, #FDF5E0, #FFF8EE);
+    color: var(--brown-dark);
+    box-shadow: 0 0 0 2px rgba(201,147,42,0.2);
+  }
+
+  /* Day checkboxes */
+  .day-checks {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .day-check-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    border: 1.5px solid rgba(201,147,42,0.2);
+    border-radius: 6px;
+    cursor: pointer;
+    background: white;
+    transition: border-color 0.2s, background 0.2s;
+  }
+
+  .day-check-item:hover { border-color: rgba(201,147,42,0.5); background: #FFFDF5; }
+
+  .day-check-item input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--gold);
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+
+  .day-check-item input[type="checkbox"]:checked ~ .day-check-content {
+    color: var(--brown-dark);
+  }
+
+  .day-check-item:has(input:checked) {
+    border-color: var(--gold);
+    background: linear-gradient(135deg, #FDF5E0, #FFF8EE);
+  }
+
+  .day-check-content { flex: 1; }
+  .day-check-name { font-family: 'Noto Serif Thai', serif; font-size: 14px; font-weight: 600; color: var(--brown-dark); }
+  .day-check-desc { font-size: 12px; color: var(--brown-light); margin-top: 1px; }
+
+  /* Divider in form */
+  .form-divider {
+    height: 1px;
+    background: rgba(201,147,42,0.2);
+    margin: 6px 0 20px;
+  }
+
+  /* Submit button */
+  .rsvp-submit-btn {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #C9932A 0%, #E8821A 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Noto Serif Thai', serif;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: opacity 0.2s, transform 0.15s;
+    margin-top: 8px;
+    letter-spacing: 0.5px;
+  }
+
+  .rsvp-submit-btn:hover { opacity: 0.9; transform: scale(1.01); }
+  .rsvp-submit-btn:disabled { opacity: 0.55; cursor: not-allowed; transform: none; }
+
+  .form-privacy {
+    text-align: center;
+    font-size: 11px;
+    color: var(--brown-light);
+    margin-top: 12px;
+    line-height: 1.6;
+  }
+
+  /* ── Success state ── */
+  .modal-success {
+    display: none;
+    text-align: center;
+    padding: 40px 28px;
+  }
+
+  .success-icon { font-size: 56px; margin-bottom: 16px; animation: successPop 0.5s cubic-bezier(0.17,0.89,0.32,1.28) both; }
+  @keyframes successPop {
+    from { transform: scale(0); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+
+  .success-title {
+    font-family: 'Noto Serif Thai', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--brown-dark);
+    margin-bottom: 10px;
+  }
+
+  .success-msg {
+    font-size: 15px;
+    color: var(--brown-mid);
+    line-height: 1.7;
+    margin-bottom: 28px;
+  }
+
+  .success-close-btn {
+    background: var(--brown-dark);
+    color: var(--gold-light);
+    border: none;
+    padding: 12px 40px;
+    border-radius: 6px;
+    font-family: 'Noto Serif Thai', serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+  .success-close-btn:hover { opacity: 0.8; }
+
+  /* ── Error state ── */
+  .form-error {
+    background: #fff1f1;
+    border: 1px solid #f0a0a0;
+    border-radius: 6px;
+    padding: 10px 14px;
+    font-size: 13px;
+    color: #8B1A1A;
+    margin-bottom: 16px;
+    display: none;
+  }
+
+  /* Sticky bottom RSVP button (mobile) */
+  .sticky-rsvp {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 500;
+    background: rgba(30, 18, 8, 0.95);
+    backdrop-filter: blur(8px);
+    padding: 12px 20px;
+    border-top: 1px solid rgba(201,147,42,0.35);
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
+  }
+
+  .sticky-rsvp.visible { transform: translateY(0); }
+
+  .sticky-rsvp-btn {
+    background: linear-gradient(135deg, #C9932A, #E8821A);
+    color: white;
+    border: none;
+    padding: 12px 36px;
+    border-radius: 6px;
+    font-family: 'Noto Serif Thai', serif;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+  .sticky-rsvp-btn:hover { opacity: 0.88; }
+
+  /* Loading spinner */
+  .spinner {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgba(255,255,255,0.4);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin2 0.7s linear infinite;
+    vertical-align: middle;
+    margin-right: 6px;
+  }
+  @keyframes spin2 { to { transform: rotate(360deg); } }
+
+  @media (max-width: 600px) {
+    .modal-body { padding: 20px 18px 18px; }
+    .attend-chips { grid-template-columns: 1fr 1fr; }
+    .host-box { flex-direction: column; align-items: center; }
+    .hero-date-box { padding: 14px 20px; }
+  }
 </style>
 </head>
 <body>
 
+<!-- ═══════════════════════════════════════════
+     HERO
+════════════════════════════════════════════ -->
 <section class="hero">
   <div class="pattern-bg"></div>
   <div class="hero-frame">
@@ -860,6 +1114,7 @@
   <div class="scroll-hint">↓   เลื่อนดูรายละเอียด   ↓</div>
 </section>
 
+<!-- Quote -->
 <div class="quote-banner">
   <div class="quote-text">
     "กตัญญูกตเวที คือเครื่องหมายของคนดี... ขอน้อมกายใจบวชเรียน<br>
@@ -868,6 +1123,9 @@
   <div class="quote-source">✦ พระธรรมเทศนา ✦</div>
 </div>
 
+<!-- ═══════════════════════════════════════════
+     SCHEDULE
+════════════════════════════════════════════ -->
 <div class="schedule-bg">
   <div class="section">
     <div class="section-header">
@@ -926,10 +1184,12 @@
         </div>
       </div>
     </div>
-
   </div>
 </div>
 
+<!-- ═══════════════════════════════════════════
+     LOCATION
+════════════════════════════════════════════ -->
 <div class="schedule-bg">
   <div class="section">
     <div class="section-header">
@@ -976,6 +1236,9 @@
   </div>
 </div>
 
+<!-- ═══════════════════════════════════════════
+     INFO CARDS
+════════════════════════════════════════════ -->
 <div class="section">
   <div class="section-header">
     <div class="section-label">✦ สิ่งที่ควรทราบ ✦</div>
@@ -1017,6 +1280,9 @@
   </div>
 </div>
 
+<!-- ═══════════════════════════════════════════
+     DRESS CODE
+════════════════════════════════════════════ -->
 <div class="schedule-bg">
   <div class="section" style="padding-top:56px; padding-bottom:56px;">
     <div class="section-header">
@@ -1027,7 +1293,7 @@
 
     <div class="dress-grid">
       <div class="dress-card">
-      <div class="dress-swatch" style="background:#FFFFFF; border: 2px solid #ddd;"></div>
+        <div class="dress-swatch" style="background:#FFFFFF; border: 2px solid #ddd;"></div>
         <div class="dress-label">ขาว</div>
         <div class="dress-note">แนะนำสำหรับสุภาพสตรี<br>ชุดไทยจิตรลดา หรือโจงกระเบน</div>
       </div>
@@ -1054,21 +1320,296 @@
   </div>
 </div>
 
+<!-- ═══════════════════════════════════════════
+     ✦✦✦  RSVP SECTION  ✦✦✦
+════════════════════════════════════════════ -->
+<section class="rsvp-section" id="rsvp-section">
+  <div class="rsvp-section-pattern"></div>
+  <div class="rsvp-inner">
+    <div class="rsvp-lotus">🪷</div>
+    <div class="rsvp-headline">แจ้งความประสงค์<br>เข้าร่วมงานบุญ</div>
+    <div class="rsvp-sub">
+      กรุณาแจ้งล่วงหน้าเพื่อสะดวกในการจัดเตรียม<br>
+      อาหารและสถานที่ให้เพียงพอสำหรับทุกท่าน
+    </div>
+    <button class="rsvp-open-btn" onclick="openModal()">
+      ✦ &nbsp;แจ้งเข้าร่วมงาน&nbsp; ✦
+    </button>
+    <div class="rsvp-count-note">ไม่เก็บข้อมูลใดๆ ไว้บนเว็บไซต์นี้ — บันทึกตรงสู่ Google Sheets</div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════ -->
 <footer>
   <div class="footer-title">งานอุปสมบท นาย ภาวิฒ ฉ่ำเสนาะ</div>
   วันเสาร์ที่ ๒๗ – อาทิตย์ที่ ๒๘ มีนาคม พ.ศ. ๒๕๗๐<br>
-  ประธาน: นายชำนาญ และ นางต้อย ฉ่ำเสนาะ  <br/>  เจ้าภาพ: นางสาวกิรษา ฉ่ำเสนาะ และ นายวชิระชัย วิชัยดิษฐ์<br><br>
+  ประธาน: นายชำนาญ และ นางต้อย ฉ่ำเสนาะ &nbsp;|&nbsp; เจ้าภาพ: นางสาวกิรษา ฉ่ำเสนาะ และ นายวชิระชัย วิชัยดิษฐ์<br><br>
   <span style="font-size:11px; opacity:0.5;">ขออนุโมทนาบุญกับทุกท่านที่มาร่วมงาน</span>
 </footer>
 
+<!-- ═══════════════════════════════════════════
+     STICKY BOTTOM BAR (appears on scroll)
+════════════════════════════════════════════ -->
+<div class="sticky-rsvp" id="sticky-rsvp">
+  <button class="sticky-rsvp-btn" onclick="openModal()">✦ แจ้งเข้าร่วมงาน</button>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     RSVP MODAL
+════════════════════════════════════════════ -->
+<div class="modal-overlay" id="modal-overlay" onclick="handleOverlayClick(event)">
+  <div class="modal-box" id="modal-box">
+
+    <!-- Top bar -->
+    <div class="modal-topbar">
+      <span class="modal-top-icon">🪷</span>
+      <div class="modal-title">แจ้งความประสงค์เข้าร่วมงาน</div>
+      <div class="modal-subtitle">นาย ภาวิฒ ฉ่ำเสนาะ · ๒๗–๒๘ มีนาคม ๒๕๗๐</div>
+      <button class="modal-close" onclick="closeModal()" aria-label="ปิด">✕</button>
+    </div>
+
+    <!-- Form -->
+    <div class="modal-body" id="modal-form-body">
+
+      <div class="form-error" id="form-error"></div>
+
+      <!-- ชื่อ -->
+      <div class="form-group">
+        <label class="form-label" for="f-name">ชื่อ – นามสกุล <span class="req">*</span></label>
+        <input class="form-input" id="f-name" type="text" placeholder="กรอกชื่อ–นามสกุล" maxlength="100" autocomplete="name">
+      </div>
+
+      <!-- เบอร์โทร -->
+      <div class="form-group">
+        <label class="form-label" for="f-phone">เบอร์โทรศัพท์ <span class="req">*</span></label>
+        <input class="form-input" id="f-phone" type="tel" placeholder="0xx-xxx-xxxx" maxlength="20" autocomplete="tel">
+      </div>
+
+      <!-- ความสัมพันธ์ -->
+      <div class="form-group">
+        <label class="form-label" for="f-relation">ความสัมพันธ์กับเจ้าภาพ</label>
+        <select class="form-select" id="f-relation">
+          <option value="">— กรุณาเลือก —</option>
+          <option value="ญาติ">ญาติ</option>
+          <option value="เพื่อน">เพื่อนสนิท</option>
+          <option value="เพื่อนร่วมงาน">เพื่อนร่วมงาน</option>
+          <option value="เพื่อนบ้าน">เพื่อนบ้าน</option>
+          <option value="อื่นๆ">อื่นๆ</option>
+        </select>
+      </div>
+
+      <div class="form-divider"></div>
+
+      <!-- วันที่จะมา -->
+      <div class="form-group" id="days-group">
+        <label class="form-label">จะมาร่วมงานวันไหนบ้าง <span class="req">*</span></label>
+        <div class="day-checks">
+          <label class="day-check-item">
+            <input type="checkbox" id="d-sat" value="วันเสาร์ที่ 27 มีนาคม (โกนผม-เทศสอนนาค)">
+            <div class="day-check-content">
+              <div class="day-check-name">วันเสาร์ที่ ๒๗ มีนาคม</div>
+              <div class="day-check-desc">โกนผมนาค · เทศสอนนาค (17:00–20:00 น.)</div>
+            </div>
+          </label>
+          <label class="day-check-item">
+            <input type="checkbox" id="d-sun" value="วันอาทิตย์ที่ 28 มีนาคม (แห่นาค-บวช-เลี้ยงอาหาร)">
+            <div class="day-check-content">
+              <div class="day-check-name">วันอาทิตย์ที่ ๒๘ มีนาคม</div>
+              <div class="day-check-desc">แห่นาค · พิธีบวช · รับประทานอาหาร</div>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <!-- จำนวนคน -->
+      <div class="form-group" id="pax-group">
+        <label class="form-label" for="f-pax">จำนวนผู้ร่วมงาน (รวมท่าน) <span class="req">*</span></label>
+        <input class="form-input" id="f-pax" type="number" min="1" max="999" value="1" placeholder="กรอกจำนวนคน">
+      </div>
+
+      <!-- หมายเหตุ -->
+      <div class="form-group">
+        <label class="form-label" for="f-note">ข้อความถึงเจ้าภาพ <span style="font-weight:400; color:var(--brown-light)">(ถ้ามี)</span></label>
+        <textarea class="form-textarea" id="f-note" placeholder="เช่น มีอาหารแพ้ อยู่ต่างจังหวัด ฯลฯ" maxlength="300"></textarea>
+      </div>
+
+      <button class="rsvp-submit-btn" id="submit-btn" onclick="submitRSVP()">
+        🙏 &nbsp;ยืนยันเข้าร่วมงาน
+      </button>
+
+      <div class="form-privacy">
+        ข้อมูลของท่านจะถูกส่งตรงไปยัง Google Sheets ของเจ้าภาพเท่านั้น<br>
+        ไม่มีการเก็บข้อมูลบนเว็บไซต์นี้
+      </div>
+    </div>
+
+    <!-- Success screen -->
+    <div class="modal-success" id="modal-success">
+      <div class="success-icon">🙏</div>
+      <div class="success-title">ขอบพระคุณมากครับ!</div>
+      <div class="success-msg" id="success-msg">
+        รับทราบข้อมูลเรียบร้อยแล้ว<br>
+        ขออนุโมทนาบุญกุศลกับท่านด้วยนะครับ
+      </div>
+      <button class="success-close-btn" onclick="closeModal()">ปิด</button>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     SCRIPTS
+════════════════════════════════════════════ -->
 <script>
+  // ═══════════════════════════════════════════
+  // ⚠️  ตั้งค่า URL ของ Google Apps Script ที่นี่
+  //
+  //  Apps Script ที่ต้องใช้ (วางใน Google Sheets → Extensions → Apps Script):
+  //
+  //  function doPost(e) {
+  //    const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  //    if (sheet.getLastRow() === 0) {
+  //      sheet.appendRow(['เวลาที่ส่ง','ชื่อ–นามสกุล','เบอร์โทร','ความสัมพันธ์','วันที่มาร่วม','จำนวนคน','หมายเหตุ']);
+  //      sheet.getRange(1,1,1,7).setFontWeight('bold').setBackground('#C9932A').setFontColor('white');
+  //    }
+  //    const d = JSON.parse(e.postData.contents);
+  //    sheet.appendRow([d.timestamp, d.name, d.phone, d.relation, d.days, d.pax, d.note]);
+  //    return ContentService.createTextOutput(JSON.stringify({status:'ok'})).setMimeType(ContentService.MimeType.JSON);
+  //  }
+  // ═══════════════════════════════════════════
+  const APPS_SCRIPT_URL = "https://script.google.com/macros/s/https://script.google.com/macros/s/AKfycbzW3utNvCU_-o1-Ksxg4MHDXZxtUW661cZNmpeiUa9KGZz0f6oR99qY8vfo1gn2aLLq/exec";
+  // ^^^^ แทนที่ YOUR_SCRIPT_ID_HERE ด้วย ID จาก Google Apps Script ของคุณ
+
+  // ── Schedule tabs ──
   function switchDay(dayId, btn) {
     document.querySelectorAll('.day-content').forEach(el => el.classList.remove('active'));
     document.querySelectorAll('.day-tab').forEach(el => el.classList.remove('active'));
     document.getElementById(dayId).classList.add('active');
     btn.classList.add('active');
   }
+
+  // ── Sticky bar on scroll ──
+  const stickyBar = document.getElementById('sticky-rsvp');
+  const rsvpSection = document.getElementById('rsvp-section');
+
+  window.addEventListener('scroll', () => {
+    const scrolled = window.scrollY > 400;
+    const pastRsvp = rsvpSection.getBoundingClientRect().top < window.innerHeight * 0.8;
+    stickyBar.classList.toggle('visible', scrolled && !pastRsvp);
+  }, { passive: true });
+
+  // ── Modal open/close ──
+  function openModal() {
+    document.getElementById('modal-overlay').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    document.getElementById('modal-overlay').classList.remove('open');
+    document.body.style.overflow = '';
+    // reset after animation
+    setTimeout(resetForm, 400);
+  }
+
+  function handleOverlayClick(e) {
+    if (e.target === document.getElementById('modal-overlay')) closeModal();
+  }
+
+  // ── Validate ──
+  function validate() {
+    const name = document.getElementById('f-name').value.trim();
+    const phone = document.getElementById('f-phone').value.trim();
+    const dayChecked = document.getElementById('d-sat').checked || document.getElementById('d-sun').checked;
+    if (!name) return 'กรุณากรอกชื่อ–นามสกุล';
+    if (!phone) return 'กรุณากรอกเบอร์โทรศัพท์';
+    if (!dayChecked) return 'กรุณาเลือกวันที่จะมาร่วมงานอย่างน้อย 1 วัน';
+    const pax = parseInt(document.getElementById('f-pax').value);
+    if (!pax || pax < 1) return 'กรุณากรอกจำนวนผู้ร่วมงาน';
+    return null;
+  }
+
+  // ── Collect days ──
+  function getDays() {
+    const days = [];
+    if (document.getElementById('d-sat').checked) days.push(document.getElementById('d-sat').value);
+    if (document.getElementById('d-sun').checked) days.push(document.getElementById('d-sun').value);
+    return days.join(' | ');
+  }
+
+  // ── Submit ──
+  async function submitRSVP() {
+    const errEl = document.getElementById('form-error');
+    errEl.style.display = 'none';
+
+    const error = validate();
+    if (error) {
+      errEl.textContent = '⚠ ' + error;
+      errEl.style.display = 'block';
+      errEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      return;
+    }
+
+    const btn = document.getElementById('submit-btn');
+    btn.disabled = true;
+    btn.innerHTML = '<span class="spinner"></span>กำลังส่งข้อมูล...';
+
+    const payload = {
+      timestamp: new Date().toLocaleString('th-TH', { timeZone: 'Asia/Bangkok' }),
+      name:      document.getElementById('f-name').value.trim(),
+      phone:     document.getElementById('f-phone').value.trim(),
+      relation:  document.getElementById('f-relation').value || '-',
+      days:      getDays(),
+      pax:       document.getElementById('f-pax').value,
+      note:      document.getElementById('f-note').value.trim() || '-',
+    };
+
+    try {
+      await fetch(APPS_SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+      showSuccess(payload.name);
+    } catch (e) {
+      btn.disabled = false;
+      btn.innerHTML = '🙏 &nbsp;ยืนยันเข้าร่วมงาน';
+      errEl.textContent = '⚠ เกิดข้อผิดพลาด กรุณาลองอีกครั้ง หรือติดต่อเจ้าภาพโดยตรง';
+      errEl.style.display = 'block';
+    }
+  }
+
+  function showSuccess(name) {
+    document.getElementById('modal-form-body').style.display = 'none';
+    document.getElementById('modal-success').style.display = 'block';
+    document.getElementById('success-msg').innerHTML =
+      `รับทราบแล้วว่า <strong>${name}</strong> จะมาร่วมงานบุญ<br>ขออนุโมทนาบุญกุศลกับท่านด้วยนะครับ 🙏`;
+  }
+
+  function resetForm() {
+    document.getElementById('modal-form-body').style.display = 'block';
+    document.getElementById('modal-success').style.display = 'none';
+    document.getElementById('f-name').value = '';
+    document.getElementById('f-phone').value = '';
+    document.getElementById('f-relation').value = '';
+    document.getElementById('f-note').value = '';
+    document.getElementById('f-pax').value = '1';
+    document.getElementById('d-sat').checked = false;
+    document.getElementById('d-sun').checked = false;
+    document.getElementById('form-error').style.display = 'none';
+    const btn = document.getElementById('submit-btn');
+    btn.disabled = false;
+    btn.innerHTML = '🙏 &nbsp;ยืนยันเข้าร่วมงาน';
+  }
+
+  // ESC key close
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeModal();
+  });
 </script>
 
 </body>
 </html>
+
