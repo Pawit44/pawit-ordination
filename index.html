@@ -1389,11 +1389,6 @@
       </div>
 
       <button class="rsvp-submit-btn" id="submit-btn" onclick="submitRSVP()">ยืนยันเข้าร่วมงาน</button>
-
-      <div class="form-privacy">
-        ข้อมูลของท่านจะถูกส่งตรงไปยัง Google Sheets ของเจ้าภาพเท่านั้น<br>
-        ไม่มีการเก็บข้อมูลบนเว็บไซต์นี้
-      </div>
     </div>
 
     <!-- Success screen -->
@@ -1535,7 +1530,7 @@
     document.getElementById('modal-form-body').style.display = 'none';
     document.getElementById('modal-success').style.display = 'block';
     document.getElementById('success-msg').innerHTML =
-      `รับทราบแล้วว่า <strong>${name}</strong> จะมาร่วมงานบุญ<br>ขออนุโมทนาบุญกุศลกับท่านด้วยนะครับ 🙏`;
+      `รับทราบแล้วว่า <strong>${name}</strong> จะมาร่วมงานบุญ<br>ขออนุโมทนาบุญกุศลกับท่านด้วยนะครับ`;
   }
 
   function resetForm() {
