@@ -1282,7 +1282,6 @@
 <section class="rsvp-section" id="rsvp-section">
   <div class="rsvp-section-pattern"></div>
   <div class="rsvp-inner">
-    <div class="rsvp-deco">❂</div>
     <div class="rsvp-headline">แจ้งความประสงค์<br>เข้าร่วมงานบุญ</div>
     <div class="rsvp-sub">
       กรุณาแจ้งล่วงหน้าเพื่อสะดวกในการจัดเตรียม<br>
@@ -1319,7 +1318,6 @@
 
     <!-- Top bar -->
     <div class="modal-topbar">
-      <span class="modal-top-icon">✦</span>
       <div class="modal-title">แจ้งความประสงค์เข้าร่วมงาน</div>
       <div class="modal-subtitle">นาย ภาวิฒ ฉ่ำเสนาะ · ๒๗–๒๘ มีนาคม ๒๕๗๐</div>
       <button class="modal-close" onclick="closeModal()" aria-label="ปิด">✕</button>
@@ -1348,9 +1346,9 @@
         <select class="form-select" id="f-relation">
           <option value="">— กรุณาเลือก —</option>
           <option value="ญาติ">ญาติ</option>
-          <option value="เพื่อน">เพื่อนสนิท</option>
-          <option value="เพื่อนร่วมงาน">เพื่อนร่วมงาน</option>
-          <option value="เพื่อนบ้าน">เพื่อนบ้าน</option>
+          <option value="เพื่อน">เพื่อน</option>
+          <option value="เพื่อน">พี่</option>
+          <option value="เพื่อน">น้อง</option>
           <option value="อื่นๆ">อื่นๆ</option>
         </select>
       </div>
@@ -1400,7 +1398,6 @@
 
     <!-- Success screen -->
     <div class="modal-success" id="modal-success">
-      <div class="success-icon">✓</div>
       <div class="success-title">ขอบพระคุณมากครับ!</div>
       <div class="success-msg" id="success-msg">
         รับทราบข้อมูลเรียบร้อยแล้ว<br>
@@ -1528,7 +1525,7 @@
       showSuccess(payload.name);
     } catch (e) {
       btn.disabled = false;
-      btn.innerHTML = '🙏 &nbsp;ยืนยันเข้าร่วมงาน';
+      btn.innerHTML = 'ยืนยันเข้าร่วมงาน';
       errEl.textContent = '⚠ เกิดข้อผิดพลาด กรุณาลองอีกครั้ง หรือติดต่อเจ้าภาพโดยตรง';
       errEl.style.display = 'block';
     }
@@ -1554,7 +1551,7 @@
     document.getElementById('form-error').style.display = 'none';
     const btn = document.getElementById('submit-btn');
     btn.disabled = false;
-    btn.innerHTML = '🙏 &nbsp;ยืนยันเข้าร่วมงาน';
+    btn.innerHTML = 'ยืนยันเข้าร่วมงาน';
   }
 
   // ESC key close
