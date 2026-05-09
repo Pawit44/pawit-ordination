@@ -1479,7 +1479,7 @@
   //    return ContentService.createTextOutput(JSON.stringify({status:'ok'})).setMimeType(ContentService.MimeType.JSON);
   //  }
   // ═══════════════════════════════════════════
-  const APPS_SCRIPT_URL = "https://script.google.com/macros/s/https://script.google.com/macros/s/AKfycbzW3utNvCU_-o1-Ksxg4MHDXZxtUW661cZNmpeiUa9KGZz0f6oR99qY8vfo1gn2aLLq/exec";
+  const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzW3utNvCU_-o1-Ksxg4MHDXZxtUW661cZNmpeiUa9KGZz0f6oR99qY8vfo1gn2aLLq/exec";
   // ^^^^ แทนที่ YOUR_SCRIPT_ID_HERE ด้วย ID จาก Google Apps Script ของคุณ
 
   // ── Schedule tabs ──
@@ -1569,7 +1569,7 @@
       await fetch(APPS_SCRIPT_URL, {
         method: 'POST',
         mode: 'no-cors',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
         body: JSON.stringify(payload),
       });
       showSuccess(payload.name);
