@@ -1469,7 +1469,7 @@
     const relation = document.getElementById('f-relation').value;
     if (!name) return 'กรุณากรอกชื่อ–นามสกุล';
     if (!phone) return 'กรุณากรอกเบอร์โทรศัพท์';
-    if (!relation) return 'กรุณาเลือกความสัมพันธ์';
+    if (relation==='') return 'กรุณาเลือกความสัมพันธ์';
     if (!dayChecked) return 'กรุณาเลือกวันที่จะมาร่วมงานอย่างน้อย 1 วัน';
     const pax = parseInt(document.getElementById('f-pax').value);
     if (!pax || pax < 1) return 'กรุณากรอกจำนวนผู้ร่วมงาน';
