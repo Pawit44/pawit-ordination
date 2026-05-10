@@ -1425,7 +1425,6 @@
   //  }
   // ═══════════════════════════════════════════
   const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzW3utNvCU_-o1-Ksxg4MHDXZxtUW661cZNmpeiUa9KGZz0f6oR99qY8vfo1gn2aLLq/exec";
-  // ^^^^ แทนที่ YOUR_SCRIPT_ID_HERE ด้วย ID จาก Google Apps Script ของคุณ
 
   // ── Schedule tabs ──
   function switchDay(dayId, btn) {
@@ -1467,9 +1466,11 @@
     const name = document.getElementById('f-name').value.trim();
     const phone = document.getElementById('f-phone').value.trim();
     const dayChecked = document.getElementById('d-sat').checked || document.getElementById('d-sun').checked;
+    const relation = document.getElementById('f-relation').value;
     if (!name) return 'กรุณากรอกชื่อ–นามสกุล';
     if (!phone) return 'กรุณากรอกเบอร์โทรศัพท์';
     if (!dayChecked) return 'กรุณาเลือกวันที่จะมาร่วมงานอย่างน้อย 1 วัน';
+    if (!relation) return 'กรุณาเลือกความสัมพันธ์';
     const pax = parseInt(document.getElementById('f-pax').value);
     if (!pax || pax < 1) return 'กรุณากรอกจำนวนผู้ร่วมงาน';
     return null;
